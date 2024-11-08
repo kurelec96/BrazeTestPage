@@ -6,10 +6,11 @@ function validateRegisterForm(event) {
 
     if (password !== confirmPassword) {
         alert("Passwords do not match!");
-        return false;
     }
-    window.location.href = "https://kurelec96.github.io/BrazeTestPage/store.html";
-    return true;
+    else{
+        window.location.href = "https://kurelec96.github.io/BrazeTestPage/store.html";
+
+    }
 }
 
 function validateLoginForm() {
