@@ -1,4 +1,6 @@
-function validateRegisterForm() {
+function validateRegisterForm(event) {
+    event.preventDefault(); 
+
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
 
