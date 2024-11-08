@@ -6,7 +6,7 @@ function validateRegisterForm() {
         alert("Passwords do not match!");
         return false;
     }
-    window.location.href = "store.html";
+    window.location.href = "https://kurelec96.github.io/BrazeTestPage/store.html";
     return true;
 }
 
@@ -19,7 +19,7 @@ function validateLoginForm() {
         return false;
     }
 
-    alert("Login successful!");
+    window.location.href = "https://kurelec96.github.io/BrazeTestPage/store.html";
     return true;
 }
 
