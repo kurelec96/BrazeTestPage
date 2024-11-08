@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,13 +9,21 @@
 <body>
     <div class="form-container">
         <h2>Set Your Preferences</h2>
-        <form id="preferencesForm">
+
+        <!-- Full Name Input -->
+        <div class="input-field">
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" name="fullName" required>
+        </div>
 
+        <!-- Email Input -->
+        <div class="input-field">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+        </div>
 
+        <!-- Notifications Checkboxes -->
+        <div class="input-field">
             <label for="notifications">Notifications:</label>
             <div>
                 <input type="checkbox" id="emailNotifications" name="notifications" value="email">
@@ -28,16 +37,21 @@
                 <input type="checkbox" id="pushNotifications" name="notifications" value="push">
                 <label for="pushNotifications">Push Notifications</label>
             </div>
+        </div>
 
+        <!-- Theme Selection -->
+        <div class="input-field">
             <label for="theme">Preferred Theme:</label>
             <select id="theme" name="theme">
                 <option value="light">Light</option>
                 <option value="dark">Dark</option>
                 <option value="colorful">Colorful</option>
             </select>
+        </div>
 
-            <button type="submit" onclick="submitPreferences()">Save Preferences</button>
-        </form>
+        <!-- Submit Button -->
+        <button id="savePreferencesButton">Save Preferences</button>
+
     </div>
 
     <script src="script.js"></script>

@@ -9,15 +9,19 @@
 <body>
     <div class="form-container">
         <h2>Login</h2>
-        <form id="loginForm" onsubmit="return validateLoginForm()">
+
+        <div class="input-field">
             <label for="loginUsername">Username:</label>
             <input type="text" id="loginUsername" name="loginUsername" required>
+        </div>
 
+        <div class="input-field">
             <label for="loginPassword">Password:</label>
             <input type="password" id="loginPassword" name="loginPassword" required>
+        </div>
 
-            <button type="submit">Login</button>
-        </form>
+        <button id="loginButton">Login</button>
+        
         <p>Don't have an account? <a href="register.html">Register here</a></p>
     </div>
 
