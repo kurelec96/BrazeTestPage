@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
 <body>
     <div class="form-container">
         <h2>Login</h2>
-        <form id="loginForm" onsubmit="validateLoginForm(event)">
+        <form id="loginForm" onsubmit="return validateLoginForm()">
             <label for="loginUsername">Username:</label>
             <input type="text" id="loginUsername" name="loginUsername" required>
 
@@ -17,7 +18,7 @@
 
             <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <a href="index.html">Register here</a></p>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
     </div>
 
     <script src="script.js"></script>

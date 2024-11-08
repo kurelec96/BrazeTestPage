@@ -1,30 +1,27 @@
-function validateRegisterForm(event) {
-    event.preventDefault(); 
-
+function validateRegisterForm() {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
 
     if (password !== confirmPassword) {
         alert("Passwords do not match!");
+        return false;
     }
-    else{
-        window.location.href = "store.html";
-    }
+
+    alert("Registration successful!");
+    return true;
 }
 
-function validateLoginForm(event) {
-    event.preventDefault(); 
-
+function validateLoginForm() {
     const username = document.getElementById("loginUsername").value;
     const password = document.getElementById("loginPassword").value;
 
     if (username === "" || password === "") {
         alert("Please fill in all fields!");
-
+        return false;
     }
 
-    window.location.href = "https://kurelec96.github.io/BrazeTestPage/store.html";
-
+    alert("Login successful!");
+    return true;
 }
 
 function submitPreferences() {
@@ -45,8 +42,8 @@ function submitPreferences() {
         theme
     };
 
+    // Simulate sending to server (you can replace this with an actual POST request)
     console.log("Saving preferences:", preferencesData);
 
     alert("Preferences saved successfully!");
 }
-

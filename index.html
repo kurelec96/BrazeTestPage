@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
 <body>
     <div class="form-container">
         <h2>Register</h2>
-        <form id="registerForm" onsubmit="validateRegisterForm(event)">
+        <form id="registerForm" onsubmit="return validateRegisterForm()">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
