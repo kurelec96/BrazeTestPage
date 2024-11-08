@@ -44,6 +44,5 @@ function submitPreferences() {
 
     // Simulate sending to server (you can replace this with an actual POST request)
     console.log("Saving preferences:", preferencesData);
-
-    alert("Preferences saved successfully!");
+    window.location.href = 'www.google.com';
 }
