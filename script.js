@@ -8,6 +8,7 @@ function validateRegisterForm() {
     }
 
     alert("Registration successful!");
+    window.location.href = "store.html";
     return true;
 }
 
