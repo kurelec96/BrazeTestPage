@@ -6,8 +6,6 @@ function validateRegisterForm() {
         alert("Passwords do not match!");
         return false;
     }
-
-    alert("Registration successful!");
     window.location.href = "store.html";
     return true;
 }
